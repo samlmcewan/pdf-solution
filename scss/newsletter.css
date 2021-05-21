@@ -210,6 +210,10 @@ h1, h2, h3 {
 .blog-sidebar, .contents-dropdown {
   display: none; }
 
+.highlight-bold {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
 ul {
   padding: 0; }
 
@@ -249,7 +253,8 @@ ul li {
 
 .blockquote {
   border-left: 3px solid var(--black);
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
+  margin: 2rem 0;
   background-color: var(--liteGray); }
 
 .contents-heading {
@@ -383,7 +388,8 @@ footer .container-fluid {
     font-size: 1.25rem; }
 
   .contents-dropdown {
-    display: block; }
+    display: block;
+    float: right; }
 
   .contents-dropdown .dropdown-menu {
     min-width: 20rem;
@@ -438,6 +444,14 @@ footer .container-fluid {
   .footer ul {
     margin-bottom: 0; } }
 @media (min-width: 992px) {
+  .blog-sidebar {
+    display: block;
+    text-indent: -2rem;
+    padding-left: 3rem; }
+
+  .contents-col-mob {
+    display: none; }
+
   footer .container-fluid {
     padding-left: 15px;
     padding-right: 15px; }

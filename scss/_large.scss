@@ -1,4 +1,17 @@
 @media (min-width: 992px) {
+
+    .blog-sidebar {
+        display: block;
+        text-indent: -2rem;
+        padding-left: 3rem;
+    }
+.contents-col-mob {
+    display: none;
+}
+
+
+
+
 footer .container-fluid {
     padding-left: 15px;
     padding-right: 15px;

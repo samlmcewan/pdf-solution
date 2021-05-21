@@ -263,6 +263,11 @@
       display: none;
   }
 
+  .highlight-bold {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
 
 
 
@@ -342,7 +347,8 @@ ul li {
 
 .blockquote {
     border-left: 3px solid var(--black);
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
+    margin: 2rem 0;
     background-color: var(--liteGray);
 }
 
