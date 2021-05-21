@@ -11,14 +11,14 @@
 
 html {
   /* background: #f5f7f8; */
-  font-family: dejarip, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   -webkit-font-smoothing: antialiased;
   padding: 0; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal; }
 
 header {
   width: 90%;
@@ -147,7 +147,7 @@ h1, h2, h3 {
   background-color: transparent;
   margin-bottom: 2rem; }
 
-.breadcrumb-item .active {
+.breadcrumb-item .active, aside .active {
   color: #737373; }
 
 .header-container {
@@ -207,7 +207,7 @@ h1, h2, h3 {
 
   .item-1 h1 {
     font-size: 24px; } }
-.blog-sidebar {
+.blog-sidebar, .contents-dropdown {
   display: none; }
 
 ul {
@@ -252,6 +252,9 @@ ul li {
   padding: 1rem 0 1rem 1rem;
   background-color: var(--liteGray); }
 
+.contents-heading {
+  font-weight: 700; }
+
 /* footer  */
 footer .container-fluid {
   padding-left: 0;
@@ -259,7 +262,9 @@ footer .container-fluid {
 
 .footer {
   background-color: var(--liteGray);
-  color: var(--black); }
+  color: var(--black);
+  margin-top: 3rem;
+  padding-bottom: 3rem; }
 
 .footer-last {
   margin-bottom: 0rem;
@@ -352,7 +357,8 @@ footer .container-fluid {
   border-right: 2px solid #ffffff; }
 
 .sub-footer {
-  border-top: 2px solid #ffffff30; }
+  background-color: var(--black);
+  color: var(--white); }
 
 .footer-last a {
   color: #212121; }
@@ -376,8 +382,61 @@ footer .container-fluid {
   .nav-title {
     font-size: 1.25rem; }
 
-  .blog-sidebar {
-    display: block; } }
+  .contents-dropdown {
+    display: block; }
+
+  .contents-dropdown .dropdown-menu {
+    min-width: 20rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    text-indent: -2rem; }
+
+  .dropdown-menu li {
+    margin-bottom: 1rem; }
+
+  nav .fad {
+    font-size: 1.5rem;
+    padding: 0.2rem; }
+
+  #navigation {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; }
+
+  .nav-icons {
+    margin-bottom: auto; }
+
+  .docTitle {
+    font-size: 2rem; }
+
+  .aside-num {
+    padding-right: 1rem; }
+
+  .site-info {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem; }
+
+  .address-footer {
+    display: none; }
+
+  .logo-container-footer {
+    justify-content: inherit; }
+
+  .footer a {
+    color: var(--black); }
+
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end; }
+
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
+  .footer ul {
+    margin-bottom: 0; } }
 @media (min-width: 992px) {
   footer .container-fluid {
     padding-left: 15px;

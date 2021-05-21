@@ -13,9 +13,6 @@
 
   html {
     /* background: #f5f7f8; */
-    font-family: dejarip, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     -webkit-font-smoothing: antialiased;
     padding: 0;
     
@@ -23,6 +20,9 @@
   
   body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
   }
   
   header {
@@ -174,7 +174,7 @@
     margin-bottom: 2rem;
   }
   
-  .breadcrumb-item .active {
+  .breadcrumb-item .active, aside .active {
     color: #737373;
   }
   
@@ -259,7 +259,7 @@
     }
   }
   
-  .blog-sidebar {
+  .blog-sidebar, .contents-dropdown {
       display: none;
   }
 
@@ -347,6 +347,11 @@ ul li {
 }
 
 
+.contents-heading {
+  font-weight: 700;
+}
+
+
 
 /* footer  */
 
@@ -360,6 +365,8 @@ footer .container-fluid {
 .footer {
     background-color: var(--liteGray);
    color: var(--black);
+   margin-top: 3rem;
+   padding-bottom: 3rem;
     
     
 }
@@ -497,7 +504,9 @@ footer .container-fluid {
 
 .sub-footer {
    
-    border-top: 2px solid #ffffff30;
+    // border-top: 2px solid #ffffff30;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 

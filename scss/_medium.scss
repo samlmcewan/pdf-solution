@@ -15,10 +15,83 @@
         font-size: 1.25rem;
     }
 
+     .contents-dropdown {
+         display: block;
+     }
+
+     .contents-dropdown .dropdown-menu {
+         min-width: 20rem;
+         padding: 1rem;
+         padding-left: 3rem;
+         text-indent: -2rem;
+     }
+     .dropdown-menu li {
+         margin-bottom: 1rem;
+     }
      
-  .blog-sidebar {
-    display: block;
-}
-    
-      
+
+    //  .contents-dropdown .dropdown-menu li a {
+    //      text-indent: -1rem;
+    //  }
+
+    //  .aside-text {
+    //      padding-left: 1rem;
+ 
+    //  }
+ 
+
+    nav .fad {
+        font-size: 1.5rem;
+        padding: 0.2rem;
+    }
+    #navigation {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .nav-icons {
+        margin-bottom: auto;
+    }
+      .docTitle {
+          font-size: 2rem;
+      }
+
+    .aside-num {
+        padding-right: 1rem;
+    }.site-info {
+        font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    }
+
+    // .footer .col-md-2, .footer .col-md-4 {
+    //     padding: 0;
+    // }
+    .address-footer {
+        display: none;
+      }
+
+      .logo-container-footer {
+          justify-content: inherit;
+      }
+      .footer a  {
+        color: var(--black);
+      }
+
+    .footer-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .footer ul {
+        margin-bottom: 0;
+    }
 }
