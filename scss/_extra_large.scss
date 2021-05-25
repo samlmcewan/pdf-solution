@@ -1,4 +1,18 @@
 // Extra large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
-    
+  
+     
+      .navbar-expand-xl .navbar-toggler {
+    display: block;
 }
+
+#burger-toggler {
+  display: none;
+}
+
+     }
+
+   
+
+
+ 
