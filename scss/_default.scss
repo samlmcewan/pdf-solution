@@ -39,7 +39,10 @@
     z-index: 1030;
   }
   
-
+// .container {
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
 
 
   .contents-nav {
@@ -115,15 +118,19 @@
     font-style: normal;
   }
   
-  .article-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  // .article-cards {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
     
-  }
+  // }
+
+    #article-cards {
+      padding: 3px;
+    }
 
   .card-col {
-    padding: 10px;
+    padding: 12px;
   }
   
   .card {
@@ -143,6 +150,11 @@
     top: -2px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
+
+  .card-col a:hover {
+    text-decoration: none;
+  }
+ 
   .card-text {
     padding: 20px;
     flex: 1;
