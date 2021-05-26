@@ -32,9 +32,6 @@ header {
   left: 0;
   z-index: 1030; }
 
-.desktop-menu {
-  display: none; }
-
 .contents-nav {
   margin-top: auto;
   margin-left: auto;
@@ -636,11 +633,14 @@ footer .container-fluid {
     bottom: 0;
     z-index: 9999;
     overflow-y: auto;
-    right: -260px;
-    width: 260px;
-    padding-top: 18px;
-    background: rgba(34, 34, 34, 0.8);
+    right: -30rem;
+    width: 30rem;
+    padding-top: 10rem;
+    background: rgba(52, 58, 64, 0.9);
     transition: 0.4s; }
+
+  .nav-menu .aside-num {
+    padding-right: 1rem; }
 
   .nav-menu * {
     margin: 0;
@@ -650,13 +650,15 @@ footer .container-fluid {
   .nav-menu a {
     display: block;
     position: relative;
-    color: #ffd2b7;
+    color: #e6e6e6;
     padding: 10px 20px;
     font-weight: 500;
-    transition: 0.3s; }
+    transition: 0.3s;
+    text-indent: -2.1rem;
+    padding-left: 4rem; }
 
   .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #ffa26a;
+    color: #4cbeed;
     text-decoration: none; }
 
   .nav-menu .drop-down > a:after {
@@ -687,8 +689,9 @@ footer .container-fluid {
 
   .nav-toggle {
     position: fixed;
-    right: 15px;
-    top: 15px;
+    right: calc(2.5rem + 15px);
+    top: 3.1rem;
+    margin-right: auto;
     z-index: 9998;
     border: 0;
     background: rgba(34, 34, 34, 0.5);
@@ -697,7 +700,7 @@ footer .container-fluid {
     line-height: 1;
     cursor: pointer;
     text-align: right;
-    padding: 10px 12px;
+    padding: 12px 12px;
     border-radius: 2px; }
 
   .nav-toggle i {
@@ -705,12 +708,15 @@ footer .container-fluid {
     font-size: 18px; }
 
   .nav-toggle-active {
-    right: 275px; }
+    z-index: 999999999999; }
 
   .blog-sidebar {
     display: block;
     text-indent: -2rem;
     padding-left: 3rem; }
+
+  .blog-sidebar li {
+    padding: 10px 0; }
 
   .contents-col-mob {
     display: none; }
@@ -720,5 +726,11 @@ footer .container-fluid {
 
   .footer {
     padding: 2rem; } }
+@media only screen and (min-width: 1200px) {
+  .navbar-expand-xl .navbar-toggler {
+    display: block; }
+
+  #burger-toggler {
+    display: none; } }
 
 /*# sourceMappingURL=newsletter.css.map */

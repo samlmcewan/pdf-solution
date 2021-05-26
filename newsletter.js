@@ -85,3 +85,32 @@ $(document).ready(function () {
 
   
   })()
+
+//   Make the desktop burger icon inline with the navbar container
+
+const outerNav = document.querySelector('#navigation');
+
+const outerNavCompStyles = window.getComputedStyle(outerNav);
+
+const outerNavPad = outerNavCompStyles.getPropertyValue('padding-right');
+
+const outerNavNum = parseInt(outerNavPad.replace(/px/,""));
+
+const navContainer = document.querySelector('#navContainer');
+
+const navContainerCompStyles = window.getComputedStyle(navContainer);
+
+const navContainerPad = navContainerCompStyles.getPropertyValue('padding-right');
+
+const navContainerNum = parseInt(navContainerPad.replace(/px/,""));
+
+const navMargin = navContainerCompStyles.getPropertyValue('margin-right');
+
+const navContainerMarginNum = parseInt(navMargin.replace(/px/,""));
+
+const totalPad = outerNavNum + navContainerNum + navContainerMarginNum;
+
+const desktopBurger = document.querySelector('#desktop-nav-toggle');
+
+desktopBurger.style.setProperty('right', (totalPad + 'px'));
+
