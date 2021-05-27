@@ -37,6 +37,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
+    background-color: $dark_teal;
   }
   
 // .container {
@@ -562,8 +563,8 @@ padding-top: 2rem;
   }
 
   .nav-title {
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
       color: var(--white);
     //   color: var(--black);
       font-size: 1rem;
@@ -828,7 +829,7 @@ footer .container-fluid {
 .sub-footer {
    
     // border-top: 2px solid #ffffff30;
-    background-color: var(--black);
+    background-color: $dark_teal;
     color: var(--white);
 }
 

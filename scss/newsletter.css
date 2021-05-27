@@ -30,7 +30,8 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; }
+  z-index: 1030;
+  background-color: #00788a; }
 
 .contents-nav {
   margin-top: auto;
@@ -438,8 +439,6 @@ h1, h2, h3 {
   align-items: center; }
 
 .nav-title {
-  display: flex;
-  flex-direction: column;
   color: var(--white);
   font-size: 1rem; }
 
@@ -620,7 +619,7 @@ footer .container-fluid {
   border-right: 2px solid #ffffff; }
 
 .sub-footer {
-  background-color: var(--black);
+  background-color: #00788a;
   color: var(--white); }
 
 .footer-last a {
