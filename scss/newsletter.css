@@ -203,6 +203,93 @@ header {
   top: 21px;
   left: 8px; }
 
+   /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.nav-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  right: -30rem;
+  width: 30rem;
+  padding-top: 10rem;
+  background: rgba(52, 58, 64, 0.9);
+  transition: 0.4s;
+  max-width: 75vw; }
+
+.nav-menu .aside-num {
+  padding-right: 1rem; }
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #e6e6e6;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: 0.3s;
+  text-indent: -2.1rem;
+  padding-left: 4rem; }
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #4cbeed;
+  text-decoration: none; }
+
+.nav-menu .drop-down > a:after {
+  content: "\e9ac";
+  font-family: "boxicons";
+  padding-left: 10px;
+  position: absolute;
+  right: 15px; }
+
+.nav-menu .active.drop-down > a:after {
+  content: "\e9ac"; }
+
+.nav-menu .drop-down > a {
+  padding-right: 35px; }
+
+.nav-menu .drop-down ul {
+  display: none;
+  overflow: hidden; }
+
+.nav-menu ul.drop-down-active {
+  display: block; }
+
+.nav-menu .drop-down li {
+  padding-left: 20px; }
+
+.nav-menu-active {
+  right: 0; }
+
+.nav-toggle {
+  position: fixed;
+  right: calc(2.5rem + 15px);
+  top: 3.1rem;
+  margin-right: auto;
+  z-index: 9998;
+  border: 0;
+  background: rgba(34, 34, 34, 0.5);
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+  padding: 12px 12px;
+  border-radius: 2px; }
+
+.nav-toggle i {
+  color: #fff;
+  font-size: 18px; }
+
+.nav-toggle-active {
+  z-index: 999999999999; }
+
 .aside-num {
   padding-right: 1rem; }
 
@@ -370,7 +457,7 @@ h1, h2, h3 {
   color: var(--white); }
 
 .navbar {
-  padding: 1rem 1rem 1rem 1rem; }
+  padding: 2rem 1rem; }
 
 @media (min-width: 60em) {
   .item-1 {
@@ -378,7 +465,7 @@ h1, h2, h3 {
 
   .item-1 h1 {
     font-size: 24px; } }
-.blog-sidebar, .contents-dropdown {
+.contents-dropdown {
   display: none; }
 
 .highlight-bold {
@@ -544,6 +631,9 @@ footer .container-fluid {
   font-weight: 500; }
 
 @media (min-width: 768px) {
+  .navbar {
+    padding: 1rem; }
+
   .nes-nav {
     height: 83px;
     width: 101px;
@@ -615,101 +705,6 @@ footer .container-fluid {
   .footer ul {
     margin-bottom: 0; } }
 @media (min-width: 992px) {
-  .burger-menu {
-    display: none; }
-
-  .contents-nav {
-    display: block; }
-
-  .desktop-menu {
-    display: block; }
-
-    /*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow-y: auto;
-    right: -30rem;
-    width: 30rem;
-    padding-top: 10rem;
-    background: rgba(52, 58, 64, 0.9);
-    transition: 0.4s; }
-
-  .nav-menu .aside-num {
-    padding-right: 1rem; }
-
-  .nav-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-
-  .nav-menu a {
-    display: block;
-    position: relative;
-    color: #e6e6e6;
-    padding: 10px 20px;
-    font-weight: 500;
-    transition: 0.3s;
-    text-indent: -2.1rem;
-    padding-left: 4rem; }
-
-  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #4cbeed;
-    text-decoration: none; }
-
-  .nav-menu .drop-down > a:after {
-    content: "\e9ac";
-    font-family: "boxicons";
-    padding-left: 10px;
-    position: absolute;
-    right: 15px; }
-
-  .nav-menu .active.drop-down > a:after {
-    content: "\e9ac"; }
-
-  .nav-menu .drop-down > a {
-    padding-right: 35px; }
-
-  .nav-menu .drop-down ul {
-    display: none;
-    overflow: hidden; }
-
-  .nav-menu ul.drop-down-active {
-    display: block; }
-
-  .nav-menu .drop-down li {
-    padding-left: 20px; }
-
-  .nav-menu-active {
-    right: 0; }
-
-  .nav-toggle {
-    position: fixed;
-    right: calc(2.5rem + 15px);
-    top: 3.1rem;
-    margin-right: auto;
-    z-index: 9998;
-    border: 0;
-    background: rgba(34, 34, 34, 0.5);
-    transition: all 0.4s;
-    outline: none !important;
-    line-height: 1;
-    cursor: pointer;
-    text-align: right;
-    padding: 12px 12px;
-    border-radius: 2px; }
-
-  .nav-toggle i {
-    color: #fff;
-    font-size: 18px; }
-
-  .nav-toggle-active {
-    z-index: 999999999999; }
-
   .blog-sidebar {
     display: block;
     text-indent: -2rem;

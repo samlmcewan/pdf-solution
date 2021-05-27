@@ -255,6 +255,115 @@ padding-top: 2rem;
 
 
 
+   /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.nav-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  right: -30rem;
+  width: 30rem;
+  padding-top: 10rem;
+  background: rgba(52, 58, 64, 0.9);
+  // background: rgba(34, 34, 34, 0.9);
+  transition: 0.4s;
+  max-width: 75vw;
+}
+
+
+.nav-menu .aside-num {
+  padding-right: 1rem;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: $light_gray;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: 0.3s;
+  text-indent: -2.1rem;
+  padding-left: 4rem;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: $light_blue;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down > a:after {
+  content: "\e9ac";
+  font-family: "boxicons";
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.nav-menu .active.drop-down > a:after {
+  content: "\e9ac";
+}
+
+.nav-menu .drop-down > a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.nav-menu ul.drop-down-active {
+  display: block;
+}
+
+.nav-menu .drop-down li {
+  padding-left: 20px;
+}
+
+.nav-menu-active {
+  right: 0;
+}
+
+.nav-toggle {
+  position: fixed;
+  right: calc(2.5rem + 15px);
+  top: 3.1rem;
+  margin-right: auto;
+  z-index: 9998;
+  border: 0;
+  background: rgba(34, 34, 34, 0.5);
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+  padding: 12px 12px;
+  border-radius: 2px;
+}
+
+.nav-toggle i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-toggle-active {
+  // right: 2rem;
+  // position: fixed;
+  // right: 25rem;
+  // margin-right: 1rem;
+  z-index: 999999999999;
+}
+
+
 
 
 
@@ -481,7 +590,7 @@ padding-top: 2rem;
   
   
   .navbar {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem;
   }
   
   
@@ -494,7 +603,7 @@ padding-top: 2rem;
     }
   }
   
-  .blog-sidebar, .contents-dropdown {
+   .contents-dropdown {
       display: none;
   }
 
