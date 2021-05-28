@@ -671,12 +671,41 @@ ul li {
 }
 
 
+
 .contents-heading {
   font-weight: 700;
 }
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+}
 
+.card-img-thumb {
+  height: 21rem;
+  overflow: hidden;
+}
 
+.card img {
+  // height: 240px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  vertical-align: middle;
+    border-style: none;
+}
+.article-number {
+  position: absolute;
+  background-color: var(--black);
+  padding: 0.7rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.2rem;
+  right: 0;
+}
 
+.col-md-6 .article-number {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
 /* footer  */
 
 footer .container-fluid {
