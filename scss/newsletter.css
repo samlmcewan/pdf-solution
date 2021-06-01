@@ -9,6 +9,9 @@
   --yellow: #ffdd00;
   --blue: #0096db; }
 
+.primary-color {
+  color: #429d4b; }
+
 html {
   /* background: #f5f7f8; */
   -webkit-font-smoothing: antialiased;
@@ -31,7 +34,7 @@ header {
   right: 0;
   left: 0;
   z-index: 1030;
-  background-color: #00788a; }
+  background-color: #429d4b; }
 
 .contents-nav {
   margin-top: auto;
@@ -646,7 +649,7 @@ footer .container-fluid {
   border-right: 2px solid #ffffff; }
 
 .sub-footer {
-  background-color: #00788a;
+  background-color: #429d4b;
   color: var(--white); }
 
 .footer-last a {

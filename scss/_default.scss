@@ -11,6 +11,10 @@
   
 
 
+  .primary-color {
+    color: $primary_color;
+  }
+
   html {
     /* background: #f5f7f8; */
     -webkit-font-smoothing: antialiased;
@@ -37,7 +41,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: $dark_teal;
+    background-color: $primary_color;
   }
   
 // .container {
@@ -858,7 +862,7 @@ footer .container-fluid {
 .sub-footer {
    
     // border-top: 2px solid #ffffff30;
-    background-color: $dark_teal;
+    background-color: $primary_color;
     color: var(--white);
 }
 
