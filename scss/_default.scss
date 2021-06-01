@@ -28,6 +28,21 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  a {
+    color: $primary_color;
+  }
+
+  a:hover {
+    color: $primary_dark;
+  }
+
+
+  p a {
+    color: $primary_color;
+    font-weight: 700;
+    text-decoration: underline;
+  }
   
   header {
     width: 90%;
@@ -301,7 +316,7 @@ padding-top: 2rem;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: $light_blue;
+  color: $primary_color;
   text-decoration: none;
 }
 
@@ -710,6 +725,52 @@ ul li {
   padding: 1rem;
   font-size: 1.5rem;
 }
+.highlight-col {
+  // min-height: 100%;
+  background-color: $primary_light;
+  padding: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  h3 {
+    font-size: 1.5rem;
+    color: $primary_dark;
+  } 
+
+  img {
+    padding-top: 2rem;
+  }
+
+}
+
+.article-img-caption {
+  background-color: $primary_light;
+  color: $primary_dark;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+
+  img {
+    padding-bottom: 0;
+  }
+
+  p {
+    margin: 0.5rem 1rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  p:first-of-type {
+    padding-top: 0.5rem;
+  }
+
+}
+
+
+
+
+
 /* footer  */
 
 footer .container-fluid {
@@ -720,7 +781,7 @@ footer .container-fluid {
 
 
 .footer {
-    background-color: var(--liteGray);
+    background-color: $primary_light;
    color: var(--black);
    margin-top: 3rem;
    padding-bottom: 3rem;
