@@ -13,7 +13,13 @@
 
   .primary-color {
     color: $primary_color;
+    font-weight: 700;
   }
+
+  .blog-post li {
+    list-style-type: disc;
+    margin-left: 1.1em;
+}
 
   html {
     /* background: #f5f7f8; */
@@ -43,7 +49,8 @@
     font-weight: 700;
     text-decoration: underline;
   }
-  
+
+ 
   header {
     width: 90%;
     max-width: 1240px;
@@ -646,7 +653,7 @@ ul li {
 
 
 .blog-post img {
-    width: 100%;
+    // width: 100%;
     padding-bottom: 1rem;
 }
 
@@ -683,10 +690,19 @@ ul li {
 }
 
 .blockquote {
-    border-left: 3px solid var(--black);
+    border-left: 3px solid $primary_color;
     padding: 1rem;
     margin: 2rem 0;
-    background-color: var(--liteGray);
+    // background-color: $primary_light;
+    font-size: 1.5rem;
+}
+
+.green-para {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: $primary_light;
+  font-weight: 700;
+
 }
 
 
@@ -700,7 +716,7 @@ ul li {
 }
 
 .card-img-thumb {
-  height: 21rem;
+  // height: 21rem;
   overflow: hidden;
 }
 
@@ -713,7 +729,7 @@ ul li {
 }
 .article-number {
   position: absolute;
-  background-color: var(--black);
+  background-color: $primary_dark;
   padding: 0.7rem;
   color: var(--white);
   font-weight: 700;
@@ -745,6 +761,16 @@ ul li {
 
 }
 
+.green-title {
+  color: var(--white);
+  background-color: $primary_color;
+  font-weight: 900;
+  padding: 0rem 0.5rem;
+  font-size: 22px;
+  font-size: 22px;
+  margin-top: 2rem;
+}
+
 .article-img-caption {
   background-color: $primary_light;
   color: $primary_dark;
@@ -767,10 +793,21 @@ ul li {
 
 }
 
+.mob-col {
+display: block;
+}
 
+.desk-col {
+  display: none;
+}
 
-
-
+.highlight-col a {
+  white-space: pre-wrap; /* CSS3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
 /* footer  */
 
 footer .container-fluid {

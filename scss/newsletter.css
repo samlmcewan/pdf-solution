@@ -10,7 +10,12 @@
   --blue: #0096db; }
 
 .primary-color {
-  color: #429d4b; }
+  color: #429d4b;
+  font-weight: 700; }
+
+.blog-post li {
+  list-style-type: disc;
+  margin-left: 1.1em; }
 
 html {
   /* background: #f5f7f8; */
@@ -495,7 +500,6 @@ ul li {
   padding: 0; }
 
 .blog-post img {
-  width: 100%;
   padding-bottom: 1rem; }
 
 .blog-img-container {
@@ -523,10 +527,16 @@ ul li {
   color: #cccccc; }
 
 .blockquote {
-  border-left: 3px solid var(--black);
+  border-left: 3px solid #429d4b;
   padding: 1rem;
   margin: 2rem 0;
-  background-color: var(--liteGray); }
+  font-size: 1.5rem; }
+
+.green-para {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #e7ede8;
+  font-weight: 700; }
 
 .contents-heading {
   font-weight: 700; }
@@ -536,7 +546,6 @@ ul li {
   max-width: 100%; }
 
 .card-img-thumb {
-  height: 21rem;
   overflow: hidden; }
 
 .card img {
@@ -547,7 +556,7 @@ ul li {
 
 .article-number {
   position: absolute;
-  background-color: var(--black);
+  background-color: #1c5d3d;
   padding: 0.7rem;
   color: var(--white);
   font-weight: 700;
@@ -571,6 +580,15 @@ ul li {
   .highlight-col img {
     padding-top: 2rem; }
 
+.green-title {
+  color: var(--white);
+  background-color: #429d4b;
+  font-weight: 900;
+  padding: 0rem 0.5rem;
+  font-size: 22px;
+  font-size: 22px;
+  margin-top: 2rem; }
+
 .article-img-caption {
   background-color: #e7ede8;
   color: #1c5d3d;
@@ -584,6 +602,24 @@ ul li {
     font-style: italic; }
   .article-img-caption p:first-of-type {
     padding-top: 0.5rem; }
+
+.mob-col {
+  display: block; }
+
+.desk-col {
+  display: none; }
+
+.highlight-col a {
+  white-space: pre-wrap;
+  /* CSS3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */ }
 
 /* footer  */
 footer .container-fluid {
@@ -728,9 +764,6 @@ footer .container-fluid {
   .dropdown-menu li {
     margin-bottom: 1rem; }
 
-  .highlight-col {
-    min-height: 100%; }
-
   nav .fad {
     font-size: 1.5rem;
     padding: 0.2rem; }
@@ -775,6 +808,18 @@ footer .container-fluid {
   .footer ul {
     margin-bottom: 0; } }
 @media (min-width: 992px) {
+  .nav-title {
+    font-size: 2rem; }
+
+  .nes-nav {
+    width: 100px; }
+
+  .mob-col {
+    display: none; }
+
+  .desk-col {
+    display: block; }
+
   .blog-sidebar {
     display: block;
     text-indent: -2rem;
