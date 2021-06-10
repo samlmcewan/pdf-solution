@@ -660,12 +660,15 @@ footer .container-fluid {
 .footer-last {
   margin-bottom: 0rem;
   padding-bottom: 0rem;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center; }
 
 .footer-logo-text {
   font-size: 1.5rem;
   line-height: 1rem; }
+
+.copysymbol {
+  font-size: 20px; }
 
 .footer a {
   /* color: #f49d00; */
@@ -748,7 +751,7 @@ footer .container-fluid {
   border-right: 2px solid #ffffff; }
 
 .sub-footer {
-  background-color: #429d4b;
+  background-color: #1c5d3d;
   color: var(--white); }
 
 .footer-last a {

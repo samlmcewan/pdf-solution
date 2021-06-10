@@ -72,6 +72,9 @@ $(document).ready(function () {
     on('click', '.nav-toggle', function(e) {
       toogleNav();
     })
+    on('focus', '.nav-menu a', function(e) {
+      toogleNav();
+    })
   
     /**
      * Mobile nav dropdowns activate
