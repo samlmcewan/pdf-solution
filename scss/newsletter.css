@@ -28,6 +28,31 @@ body {
   font-weight: 400;
   font-style: normal; }
 
+#skiptocontent a {
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-bottom-right-radius: 8px;
+  background: #1c5d3d;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 100; }
+
+#skiptocontent a:focus {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline: 0;
+  -webkit-transition: top .1s ease-in;
+  transition: top .1s ease-in;
+  z-index: 999999; }
+
 a {
   color: #429d4b; }
 
